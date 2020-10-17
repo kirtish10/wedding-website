@@ -64,7 +64,7 @@
 <br>
             <h1 class="text-center" style="font-family: 'Cinzel';background: linear-gradient(to right, #CD853F, #CD853F, #A0522D, #CD853F, #A0522D); -webkit-text-fill-color: transparent; -webkit-background-clip: text;">What are you waiting for?</h1>
            
-            <form name="submit-to-google-sheet" class="rsvp-form"
+     <form name="submit-to-google-sheet" class="rsvp-form"
         action=""
         method="POST"> 
         <div class="container shadow w-70" style="background-color: transparent;">
@@ -204,6 +204,29 @@
         <div class="form-row d-flex" style="padding-bottom: 30px">
             <div class="col d-flex justify-content-around"
             ><button class="btn btn-primary" id="submit" type="submit" onclick="uploadImage()">Submit</button></div>
+            <script>
+            
+    function uploadImage() {
+      const ref = firebase.storage().ref();
+      const file = document.querySelector("#photo").files[0];
+    
+      const name = +new Date() + "-" + file.name;
+      const metadata = {
+        contentType: file.type
+      };
+      const task = ref.child(name).put(file, metadata);
+
+      task
+        .then(snapshot => snapshot.ref.getDownloadURL())
+        .then(url => {
+          console.log(url);
+          document.querySelector("#image").src = url;
+          window.alert("The Image is Uploaded");
+        })
+        .catch(console.error);
+    }
+
+            </script>
         </div>
         </form>
             </div>
@@ -321,25 +344,25 @@ train.onclick = function(){
 
 
 
-    function uploadImage() {
-      const ref = firebase.storage().ref();
-      const file = document.querySelector("#photo").files[0];
+//     function uploadImage() {
+//       const ref = firebase.storage().ref();
+//       const file = document.querySelector("#photo").files[0];
     
-      const name = +new Date() + "-" + file.name;
-      const metadata = {
-        contentType: file.type
-      };
-      const task = ref.child(name).put(file, metadata);
+//       const name = +new Date() + "-" + file.name;
+//       const metadata = {
+//         contentType: file.type
+//       };
+//       const task = ref.child(name).put(file, metadata);
 
-      task
-        .then(snapshot => snapshot.ref.getDownloadURL())
-        .then(url => {
-          console.log(url);
-          document.querySelector("#image").src = url;
-          window.alert("The Image is Uploaded");
-        })
-        .catch(console.error);
-    }
+//       task
+//         .then(snapshot => snapshot.ref.getDownloadURL())
+//         .then(url => {
+//           console.log(url);
+//           document.querySelector("#image").src = url;
+//           window.alert("The Image is Uploaded");
+//         })
+//         .catch(console.error);
+//     }
 
 
 </script>
