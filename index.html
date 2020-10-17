@@ -232,7 +232,7 @@
     form.addEventListener('submit', e => {
       e.preventDefault()
       fetch(scriptURL, { method: 'POST', body: new FormData(form)})
-        .then(response => window.alert("Your form is submitted."))
+        .then(response => window.alert("Your file is submitted."))
         .catch(error => console.error('Error!', error.message))
         
     })
