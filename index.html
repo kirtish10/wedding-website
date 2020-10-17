@@ -250,6 +250,7 @@ var submit = document.getElementById("submit");
 yes.onclick = function(){
     $('#nextsection').show(500);
     $('#nosection').hide(500);
+    confetti.start();
 
 }
 
@@ -270,6 +271,7 @@ flight.onclick = function(){
     $('#flightsection').show(500);
     $('#datetimesection').show(500);
     $('#idsection').show(500);
+    confetti.stop();
 
 }
 train.onclick = function(){
@@ -277,6 +279,7 @@ train.onclick = function(){
     $('#trainsection').show(500);
     $('#datetimesection').show(500);
     $('#idsection').show(500);
+    confetti.start();
 
 }
 
@@ -374,6 +377,8 @@ train.onclick = function(){
     <script src="assets/js/jquery.min.js"></script>
     <script src="assets/bootstrap/js/bootstrap.min.js"></script>
     <script src="assets/js/Footer---Made-with-love.js"></script>
+    <script src="https://cdn.jsdelivr.net/gh/mathusummut/confetti.js/confetti.min.js"></script><script>confetti.start()</script>
+
 </body>
 
 </html>
