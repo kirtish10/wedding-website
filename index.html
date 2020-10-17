@@ -1,0 +1,379 @@
+
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+    <title>Vipsita Wedding</title>
+    <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto">
+    <link rel="stylesheet" href="assets/fonts/font-awesome.min.css">
+    <link rel="stylesheet" href="assets/css/Customizable-Background--Overlay.css">
+    <link rel="stylesheet" href="assets/css/Responsive-Form.css">
+    <link rel="stylesheet" href="assets/css/styles.css">
+    <link rel="stylesheet" href="assets/css/Video-Responsive.css">
+</head>
+
+<body>
+  
+    <div style="background-image: url(assets/img/back2.jpg);background-position: center;background-size: cover;max-height: 500px;width: 100%;"><img class="d-block mx-auto" src="assets/img/Asset2@500x.png" style="width: 50%;" /></div>
+
+    
+    <section id="invitation" class="section-padding">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12 text-center" style="font-family: 'Cinzel';background: linear-gradient(to right, #CD853F, #CD853F, #A0522D, #CD853F, #A0522D); -webkit-text-fill-color: transparent; -webkit-background-clip: text;">
+                    <h2>WE ARE GETTING HITCHED</h2>
+                    <p>The dates are 12th to 15th of February '21 and we would like you to be a part of
+                        it.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+
+    <section id="" class="section-padding">
+        <div class="embed-responsive embed-responsive-16by9">
+            <iframe class="embed-responsive-item"  src="assets/video/wedd.mp4" allowfullscreen></iframe>
+          </div>
+</section>
+
+    
+    
+    
+        <section id="rsvp" class=""><div class="form-group" style="background-image: url(assets/img/back2.jpg);background-repeat: no-repeat;background-size: cover;background-position: center center;">
+       
+
+
+    <div id="rsvp-modal" class="modal fade" tabindex="-1" role="dialog">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-body">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span>&times;</span>
+                    </button>
+                    <div class="section-padding">
+                        <h3 style="font-family: 'Cinzel';background: linear-gradient(to right, #CD853F, #CD853F, #A0522D, #CD853F, #A0522D); -webkit-text-fill-color: transparent; -webkit-background-clip: text;">Thank you!</h3>
+                       <p>To know more about the venue<a href="assets/venue.pdf"> click here</a></p>
+                        <div id="add-to-cal"></div>
+                    </div>
+                </div>
+            </div><!-- /.modal-content -->
+        </div><!-- /.modal-dialog -->
+    </div><!-- /.modal -->
+<br>
+            <h1 class="text-center" style="font-family: 'Cinzel';background: linear-gradient(to right, #CD853F, #CD853F, #A0522D, #CD853F, #A0522D); -webkit-text-fill-color: transparent; -webkit-background-clip: text;">What are you waiting for?</h1>
+           
+            <form name="submit-to-google-sheet" class="rsvp-form"
+        action=""
+        method="POST"> 
+        <div class="container shadow w-70" style="background-color: transparent;">
+            <div class="card">
+                <div class="card-body">
+                   
+                    
+                        <div class="form-row" >
+                            <div class="col-sm-12">
+                                <div class="form-group"><label>Name:</label><input class="form-control" type="text" placeholder="Enter your name" name="name" required></div>
+                            </div>
+                        </div>
+                        <div class="form-row">
+                            <div class="col-sm-6">
+                                <div class="form-group"><label>Email:</label><input class="form-control" type="text" placeholder="Email Address" name="email" required></div>
+                            </div>
+                            <div class="col-sm-6">
+                                <div class="form-group"><label>Contact Number:</label><input class="form-control" type="text" placeholder="Enter Your Contact Number" name="pnumber" required></div>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <div class="card-body">
+                                <h2 class="card-title text-center">Are You Attending The Wedding?</h2>
+                                <div class="form-row d-flex">
+                                    <div class="col d-flex justify-content-around"><button class="btn btn-primary" id="yes"  type="button">Yes I Will Be There...</button></div>
+                                    <div class="col d-flex justify-content-around"><button class="btn btn-primary" id="no"  type="button">No I can't Make It</button></div>
+                                </div>
+                            </div>
+                        </div>
+                   
+                </div>
+            </div>
+            <div class="card" style="display: none;" id="nextsection">
+                <div class="card-body">
+                    <h2 class="card-title text-center">That's Great...!</h2>
+                    <section id="" class="section-padding">
+        <div class="embed-responsive embed-responsive-16by9">
+            <iframe class="embed-responsive-item"  src="assets/video/welcm.mp4" ></iframe>
+          </div>
+</section>
+                        <div class="form-row">
+                            <div class="col-sm-12">
+                                <div class="form-group"><label>How many of you would be there...?</label> <select name="extras" style="width: 70px" >
+                                        <option value="1">1</option>
+                                        <option value="2">2</option>
+                                        </select>
+                                </div>
+                            </div>
+                        </div>
+                    
+                        <div class="form-row" style="font-size:30px;">
+                            <div class="col"><label class="col-form-label">How are you arriving?</label></div>
+                        </div>
+                        <div class="form-row d-flex">
+                           
+                                <div class="col d-flex justify-content-around"><button id="flight" class="btn btn-primary" type="button">By Flight</button></div>
+                                <div class="col d-flex justify-content-around"><button id="train" class="btn btn-primary" type="button">By Train</button></div>
+                       
+                                </div>
+                    
+                </div>
+            </div>
+            <div class="card" style="display: none;" id="nosection">
+                <div class="card-body text-center">
+                    <h4 class="card-title">You Will Be Missed</h4>
+                    <h5 style="color: #cd853f;">Let us know if you change your mind...!</h5>
+                </div>
+            </div>
+            <div class="card" style="display: none;" id="flightsection">
+                <div class="card-body">
+                    <h4 class="card-title text-center">Flight Details</h4>
+                    
+                        <div class="form-row">
+                            <div class="col-sm-4">
+                                <div class="form-group"><label>From</label><input value="none" class="form-control" type="text" name="flight_from" placeholder="From" required></div>
+                            </div>
+                            <div class="col-sm-4">
+                                <div class="form-group"><label>To</label><input value="none" class="form-control" type="text" name="flight_to" placeholder="To" required></div>
+                            </div>
+                            <div class="col-sm-4">
+                                <div class="form-group"><label>PNR Number</label><input value="none" class="form-control" type="text" name="flight_PNR" placeholder="PNR" required></div>
+                            </div>
+                        </div>
+                    
+                </div>
+            </div>
+            <div class="card" style="display: none;" id="trainsection">
+                <div class="card-body">
+                    <h4 class="card-title text-center">Train Details</h4>
+                    
+                        <div class="form-row">
+                            <div class="col-sm-4">
+                                <div class="form-group"><label>From</label><input value="none" class="form-control" type="text" name="train_from" placeholder="From" required></div>
+                            </div>
+                            <div class="col-sm-4">
+                                <div class="form-group"><label>To</label><input value="none" class="form-control" type="text" name="train_to" placeholder="To" required></div>
+                            </div>
+                            <div class="col-sm-4">
+                                <div class="form-group"><label>PNR Number</label><input value="none" class="form-control" type="text" name="train_PNR" placeholder="PNR" required></div>
+                            </div>
+                        </div>
+                    
+                </div>
+            </div>
+            
+                <div class="card" style="display: none;" id="datetimesection">
+                <div class="card-body">
+                    <h4 class="card-title text-center">Dates of Arrival</h4>
+
+                     <div class="form-row">
+                            <div class="col-sm-6">
+                                <div class="form-group"><label>Arriving Date:</label><input class="form-control" type="date" name="arriving_date" placeholder="Date" required></div>
+                            </div>
+                            <div class="col-sm-6">
+                                <div class="form-group"><label>Arriving Time:</label><input class="form-control" type="time" name="arriving_time" placeholder="Time" required></div>
+                            </div>
+                        </div>
+                </div>
+            </div>
+
+              <div class="card" style="display: none;" id="idsection">
+                <div class="card-body">
+                    <h4 class="card-title text-center">ID Proof Details</h4>
+
+                     <div class="form-row">
+                            <div class="col-sm-6">
+                                <div class="form-group"><label>Please upload your ID proof (eg: Aadhar card)</label> <input type="file" id="photo" />
+                                <img id="blah" src="https://www.paisabazaar.com/wp-content/uploads/2018/06/Aadhaar-helps-the-government-and-the-citizens.jpg" class="img-fluid" alt="your image" />
+    <button class="btn" onclick="uploadImage()">Upload Image of ID Proof</button></div>
+                            </div>
+                            
+                        </div>
+                </div>
+            </div>
+
+
+        </div>
+        <div class="form-row d-flex" style="padding-bottom: 30px">
+            <div class="col d-flex justify-content-around"
+            ><button class="btn btn-primary" id="submit" type="submit">Submit</button></div>
+        </div>
+        </form>
+            </div>
+</section>
+
+    <footer>
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-12 text-center content">
+                 
+                    <p>Crafted by Our Team with lots of <span style="color: red;" class="fa fa-heart pulse2"></span> for You...!</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+    
+
+
+<script>
+    const scriptURL = 'https://script.google.com/macros/s/AKfycbyJIWOHovgEiRCo780vDwybJdX6bjsC7ojOQ4Ra_o-EKiuXKzY/exec'
+    const form = document.forms['submit-to-google-sheet']
+  
+    
+    
+    form.addEventListener('submit', e => {
+      e.preventDefault()
+      fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+        .then(response => window.alert("Your form is submitted."))
+        .catch(error => console.error('Error!', error.message))
+        
+    })
+
+  </script>
+
+
+<script>
+var yes = document.getElementById("yes");
+var no = document.getElementById("no");
+var flight = document.getElementById("flight");
+var train = document.getElementById("train");
+var submit = document.getElementById("submit");
+
+yes.onclick = function(){
+    $('#nextsection').show(500);
+    $('#nosection').hide(500);
+
+}
+
+no.onclick = function(){
+    $('#nextsection').hide(500);
+    $('#nosection').show(500);
+    $('#datetimesection').hide(500);
+    $('#flightsection').hide(500);
+    $('#trainsection').hide(500);
+    $('#idsection').hide(500);
+
+}
+
+
+
+flight.onclick = function(){
+    $('#trainsection').hide(500);
+    $('#flightsection').show(500);
+    $('#datetimesection').show(500);
+    $('#idsection').show(500);
+
+}
+train.onclick = function(){
+    $('#flightsection').hide(500);
+    $('#trainsection').show(500);
+    $('#datetimesection').show(500);
+    $('#idsection').show(500);
+
+}
+
+//submit.onclick = function(){
+ //  $('#rsvp-modal').modal('show');
+//}
+
+
+
+
+</script>
+
+
+<!-- The core Firebase JS SDK is always required and must be listed first -->
+<script src="https://www.gstatic.com/firebasejs/7.24.0/firebase-app.js"></script>
+<script src="https://www.gstatic.com/firebasejs/7.24.0/firebase-storage.js"></script>
+
+
+<!-- TODO: Add SDKs for Firebase products that you want to use
+     https://firebase.google.com/docs/web/setup#available-libraries -->
+<script src="https://www.gstatic.com/firebasejs/7.24.0/firebase-analytics.js"></script>
+
+<script>
+  // Your web app's Firebase configuration
+  // For Firebase JS SDK v7.20.0 and later, measurementId is optional
+  var firebaseConfig = {
+    apiKey: "AIzaSyCUVxYaCLjhNcd3h7tLa42AWjgXbYzmRwU",
+    authDomain: "wedding-785d2.firebaseapp.com",
+    databaseURL: "https://wedding-785d2.firebaseio.com",
+    projectId: "wedding-785d2",
+    storageBucket: "wedding-785d2.appspot.com",
+    messagingSenderId: "990757142951",
+    appId: "1:990757142951:web:ed8813e323263de2a03682",
+    measurementId: "G-5T4GT8FYYD"
+  };
+  // Initialize Firebase
+  firebase.initializeApp(firebaseConfig);
+  firebase.analytics();
+
+
+
+
+    function uploadImage() {
+      const ref = firebase.storage().ref();
+      const file = document.querySelector("#photo").files[0];
+    
+      const name = +new Date() + "-" + file.name;
+      const metadata = {
+        contentType: file.type
+      };
+      const task = ref.child(name).put(file, metadata);
+
+      task
+        .then(snapshot => snapshot.ref.getDownloadURL())
+        .then(url => {
+          console.log(url);
+          document.querySelector("#image").src = url;
+          window.alert("The Image is Uploaded");
+        })
+        .catch(console.error);
+    }
+
+
+</script>
+
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+<script>window.jQuery || document.write('<script src="js/vendor/jquery-1.11.2.min.js"><\/script>')</script>
+<script src="js/jquery.fancybox.pack.js"></script>
+<script src="js/vendor/bootstrap.min.js"></script>
+<script src="js/jquery.flexslider-min.js"></script>
+<script src="js/jquery.mb.YTPlayer.min.js"></script>
+<script src="node_modules/waypoints/lib/jquery.waypoints.min.js"></script>
+<script src="js/vendor/ouical.js"></script>
+<script src="js/scripts.min.js"></script>
+<script async defer
+        src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBlPw3GQYI3faa_9mRE6plWuM7xNEmrwH0&callback=initMap"></script>
+<!-- Google Analytics -->
+<script>
+    (function (i, s, o, g, r, a, m) {
+        i['GoogleAnalyticsObject'] = r;
+        i[r] = i[r] || function () {
+            (i[r].q = i[r].q || []).push(arguments)
+        }, i[r].l = 1 * new Date();
+        a = s.createElement(o),
+            m = s.getElementsByTagName(o)[0];
+        a.async = 1;
+        a.src = g;
+        m.parentNode.insertBefore(a, m)
+    })(window, document, 'script', 'https://www.google-analytics.com/analytics.js', 'ga');
+    ga('create', 'UA-46465113-4', 'auto');
+    ga('send', 'pageview');
+</script>
+
+    <script src="assets/js/jquery.min.js"></script>
+    <script src="assets/bootstrap/js/bootstrap.min.js"></script>
+    <script src="assets/js/Footer---Made-with-love.js"></script>
+</body>
+
+</html>

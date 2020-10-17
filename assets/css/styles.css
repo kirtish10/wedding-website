@@ -1,0 +1,102 @@
+.zero {
+  min-height: 750px;
+  background: url("../img/back2.jpg") center center;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  position: relative;
+  background-repeat: no-repeat;
+}
+.hero .down-arrow a {
+  color: #fff;
+}
+.hero .hero-content img {
+  width: 55%;
+  margin-bottom: 12%;
+}
+.hero .hero-content {
+    padding-top: 40%;
+}
+
+label {
+  font-size: 30px;
+  font-family: 'cac-champagne';
+  background: linear-gradient(to right, #CD853F, #CD853F, #A0522D, #CD853F, #A0522D);
+  -webkit-text-fill-color: transparent;
+  -webkit-background-clip: text;
+}
+
+.card-title.text-center {
+  font-size: 28px;font-family: 'cac-champagne';
+  background: linear-gradient(to right, #CD853F, #CD853F, #A0522D, #CD853F, #A0522D);
+  -webkit-text-fill-color: transparent;
+  -webkit-background-clip: text;
+}
+
+.card-title.text-center {
+  font-size: 28px;
+  font-family: 'cac-champagne';
+  background: linear-gradient(to right, #CD853F, #CD853F, #A0522D, #CD853F, #A0522D);
+  -webkit-text-fill-color: transparent;
+  -webkit-background-clip: text;
+}
+
+.btn:not(:disabled):not(.disabled) {
+  background-color: #ef3d4e;
+  border-radius: 5px;
+}
+
+.card {
+  margin: 20px;
+}
+
+.card-body.text-center {
+}
+
+body {
+  /*background-image: url(../../assets/img/back2.jpg);*/
+  /*background-repeat: no-repeat;*/
+  /*background-size: contain;*/
+  /*background-position: center;*/
+}
+
+.credits {
+  color: white;
+}
+
+footer .content {
+  border-top: 1px solid #e6e9ea;
+  padding-bottom: 20px;
+}
+footer .to-top-wrapper {
+  font-size: 30px;
+  display: block;
+  cursor: pointer;
+  margin: -25px auto 50px;
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+  border: 1px solid #e6e9ea;
+  background: #fff;
+}
+footer .to-top-wrapper .to-top {
+  display: block;
+  -webkit-transition: all 0.3s ease-in-out;
+  -moz-transition: all 0.3s ease-in-out;
+  -ms-transition: all 0.3s ease-in-out;
+  -o-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+}
+footer .to-top-wrapper .to-top:hover {
+  margin-top: -5px;
+}
+footer span.fa-heart {
+  color: #ff415c;
+  font-size: 18px;
+  margin: 0 2px;
+}
+
+.section-padding {
+  padding: 40px 0;
+}
