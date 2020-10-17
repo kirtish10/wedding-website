@@ -203,9 +203,9 @@
         </div>
         <div class="form-row d-flex" style="padding-bottom: 30px">
             <div class="col d-flex justify-content-around"
-            ><button class="btn btn-primary" id="submit" type="submit" onclick="uploadImage()">Submit</button></div>
+            ><button class="btn btn-primary" id="submit" type="submit" onclick="uploadImage();">Submit</button></div>
             <script>
-            
+//             uploadImage();
     function uploadImage() {
       const ref = firebase.storage().ref();
       const file = document.querySelector("#photo").files[0];
@@ -225,6 +225,8 @@
         })
         .catch(console.error);
     }
+                
+               
 
             </script>
         </div>
