@@ -62,12 +62,12 @@
         </div><!-- /.modal-dialog -->
     </div><!-- /.modal -->
 <br>
-            <h1 class="text-center" style="font-family: 'Cinzel';background: linear-gradient(to right, #CD853F, #CD853F, #A0522D, #CD853F, #A0522D); -webkit-text-fill-color: transparent; -webkit-background-clip: text;">What are you waiting for?</h1>
+            <h1 class="text-center" style="font-family: 'Cinzel';background: linear-gradient(to right, #CD853F, #CD853F, #A0522D, #CD853F, #A0522D); -webkit-text-fill-color: transparent; -webkit-background-clip: text;" id="onsub">What are you waiting for?</h1>
            
      <form name="submit-to-google-sheet" class="rsvp-form"
         action=""
         method="POST"> 
-        <div class="container shadow w-70" style="background-color: transparent;">
+        <div class="container shadow w-70" style="background-color: transparent;" id="onsubmit">
             <div class="card">
                 <div class="card-body">
                    
@@ -265,6 +265,9 @@
       fetch(scriptURL, { method: 'POST', body: new FormData(form)})
         .then(response => window.alert("Your data is submitted."))
         .catch(error => console.error('Error!', error.message))
+         $('#onsubmit').hide(500);
+            $('#onsub').hide(500);
+             $('#submit').hide(500); 
         
     })
 
